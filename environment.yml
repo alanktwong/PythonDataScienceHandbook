@@ -1,7 +1,7 @@
-name: data-science-handbook
+name: PDSH
 channels:
   - conda-forge
 dependencies:
-  - python=3.5
+  - python=3.7
   - pip:
     - -r requirements.txt

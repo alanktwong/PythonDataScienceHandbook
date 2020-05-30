@@ -72,6 +72,31 @@ target/
 # pyenv
 .python-version
 
+# Database
+*.db
+*.rdb
+
+# Pycharm
+.idea
+*.iml
+=
+
+# VS Code
+.vscode/
+
+# vim
+*.swp
+*.swo
+
+# Emacs
+*~
+
+# exclude data from source control by default
+# /data/
+
+# Mac OS-specific storage files
+.DS_Store
+
 # celery beat schedule file
 celerybeat-schedule
 
@@ -87,10 +112,6 @@ ENV/
 
 # Rope project settings
 .ropeproject
-
-
-# Emacs
-*~
 
 
 # Temporary data files

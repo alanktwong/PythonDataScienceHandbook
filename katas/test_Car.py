@@ -1,14 +1,12 @@
-from unittest import TestCase
+import unittest
 
 from Car import Car
 
-
-class CarTest(TestCase):
+class TestCar(unittest.TestCase):
     def setUp(self):
         self.car = Car()
 
-
-class TestInit(CarTest):
+class TestInit(TestCar):
     def test_initial_speed(self):
         self.assertEqual(self.car.speed, 0)
 
@@ -19,7 +17,7 @@ class TestInit(CarTest):
         self.assertEqual(self.car.time, 0)
 
 
-class TestAccelerate(CarTest):
+class TestAccelerate(TestCar):
     def test_accelerate_from_zero(self):
         self.car.accelerate()
         self.assertEqual(self.car.speed, 5)
@@ -30,7 +28,7 @@ class TestAccelerate(CarTest):
         self.assertEqual(self.car.speed, 15)
 
 
-class TestBrake(CarTest):
+class TestBrake(TestCar):
     def test_brake_once(self):
         self.car.accelerate()
         self.car.brake()
