@@ -54,10 +54,12 @@ Remember to activate the environment:
 ```
 $ conda activate PDSH
 ```
+
 And when you want to leave:
 ```
 (PDSH) $ conda deactivate
 ```
+
 You can read more about using conda environments in the [Managing Environments](http://conda.pydata.org/docs/using/envs.html) section of the conda documentation.
 
 Launch ipython
