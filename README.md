@@ -56,12 +56,21 @@ $ conda activate PDSH
 ```
 And when you want to leave:
 ```
-$ conda deactivate
+(PDSH) $ conda deactivate
 ```
-
-
 You can read more about using conda environments in the [Managing Environments](http://conda.pydata.org/docs/using/envs.html) section of the conda documentation.
 
+Launch ipython
+
+```
+(PDSH) ➜  notebooks git:(develop) ✗ ipython
+```
+
+Or launch Jupyter
+
+```
+(PDSH) ➜  notebooks git:(develop) ✗ jupyter notebook
+```
 
 ## License
 
