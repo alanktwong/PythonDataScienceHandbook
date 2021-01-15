@@ -34,7 +34,7 @@ See [Index.ipynb](http://nbviewer.jupyter.org/github/jakevdp/PythonDataScienceHa
 The code in the book was tested with Python 3.5, though most (but not all) will also work correctly with Python 2.7 and other older Python versions.
 
 ```
-N.B. You are using Python 3.7, with Conda 4.8.2
+N.B. You are using anaconda3-2020.07 (Python 3.8.3)
 ```
 
 The packages I used to run the code in the book are listed in [requirements.txt](requirements.txt) (Note that some of these exact version numbers may not be available on your platform: you may have to tweak them for your own use).
@@ -47,7 +47,7 @@ $ conda install --file requirements.txt
 To create a stand-alone environment named ``PDSH`` with Python 3.7 and all the required package versions, run the following:
 
 ```
-$ conda create -n PDSH python=3.7 --file requirements.txt
+$ conda create -n PDSH python=3.8.3 --file requirements.txt
 ```
 
 Remember to activate the environment:
@@ -72,6 +72,15 @@ Or launch Jupyter
 
 ```
 (PDSH) ➜  notebooks git:(develop) ✗ jupyter notebook
+```
+
+### Using pyenv-virtualenv
+
+```
+$ pyenv virtualenv PDSH
+$ pyenv activate PDSH
+$ pip install -r ./requirements.txt
+$ pip deactivate
 ```
 
 ## License
